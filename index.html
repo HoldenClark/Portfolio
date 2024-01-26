@@ -1,9 +1,181 @@
-<h1>Holden Portfolio</h1>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: black;
+            font-size: 18px;
+            color: white;
+            background-color: #173982;
+        }
 
-<h3>About Me</h3>
-<p>I am 21 year old student at the University of North Carolina at Charlotte. I am a senior graduating
-    in May of 2024 with a Bachelor's Degree in Computer Science. I am currently working as a precptor
-    for ITSC 1600 which an introductory course to computer science. I have experience in Python, Java, HTML, CSS, and JavaScript.
-    I like to play video games and hangout with my friends. I also enjoy playing soccer and going for walks.
-</p>
+        header {
+            background-color: black;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding: 0 30px;
+            justify-content: center;
+        }
+
+        header .header-content {
+            max-width: 1100px;
+            display: flex;
+            width: 100%;
+        }
+
+        header img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            margin-right: 30px;
+        }
+
+        header h1 {
+            font-size: 28px;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+
+        header h2 {
+            font-size: 22px;
+            margin-top: 0;
+        }
+
+        header h3 {
+            font-size: 18px;
+            margin-top: 5;
+        }
+
+        header h4 {
+            font-size: 18px;
+            margin-top: 5;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 40px;
+            max-width: 1100px;
+            margin: 0 auto;
+            border: 3px solid black;
+        }
+
+        .about,
+        .resume,
+        .custom-section,
+        .myportfolio {
+            padding: 25px;
+            border: 3px solid black;
+            background-color: #173982;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        .about {
+            width: 90%;
+            margin-right: 10px;
+        }
+
+        .myportfolio {
+            width: 60%;
+            margin-right: 10px;
+        }
+
+        .resume {
+            width: 30%;
+            margin-right: 110px;
+        }
+
+        .custom-section {
+            width: 100%;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .resume-preview {
+            border: 3px solid black;
+            width: 100%;
+            height: 240px;
+            overflow: hidden;
+            position: relative;
+            padding: 0px;
+            margin-top: 0px;
+        }
+
+        .resume-preview iframe {
+            position: absolute;
+            top: -80px;
+            left: 0;
+            width: 100%;
+            height: 400px;
+        }
+
+        .projects {
+            margin-left: 20px;
+            padding: 40px;
+            height: 340px;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <img src=".\holden_image.JPG" alt="image">
+            <div>
+                <h1>Holden Clark</h1>
+                <h2>Portfolio</h2>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="about">
+            <h3>About Me</h3>
+            <p>I am 21 year old student at the University of North Carolina at Charlotte. I am a senior graduating
+                in May of 2024 with a Bachelor's Degree in Computer Science. I am currently working as a precptor
+                for ITSC 1600 which is an introductory course to computer science. I have experience in Python, Java,
+                HTML, CSS, and JavaScript.
+            </p>
+        </section>
+            <section class="projects">
+                <h3>My Projects</h3>
+                <p>
+                    Check out my projects here!
+                <ul>
+                    <li><a href=".\project1datamining.pdf">Project 1</a></li>
+                </ul>
+                </p>
+            </section>
+            <section class="resume">
+                <h3>Resume</h3>
+                <p>
+                    <a href=".\Clark_Holden_Software_Developer.pdf" target="_blank">Download PDF Resume</a>
+                </p>
+                <div class="resume-preview">
+                    <iframe src=".\Clark_Holden_Software_Developer.pdf" frameborder="0"></iframe>
+                </div>
+            </section>
+        </main>
+</body>
+
+</html>
